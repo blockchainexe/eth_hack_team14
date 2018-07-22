@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    ["transform-inline-environment-variables", {
+      "include": [
+        "UPORT_CLIENT_ID",
+        "UPORT_NETWORK",
+        "UPORT_SIGNING_KEY"
+      ]
+    }]
+  ]
+}
